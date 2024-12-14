@@ -38,24 +38,28 @@
         <section id="signup">
             <form action="https://formdump.codeinstitute.net" id="signup-form" method="POST">
                 <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" required>
-                <br>
+                <label for="first-name"> First Name</label>
+                <input type="text" class="text-input" name="first-name" id="first-name"><br>
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" required>
-                <br>
+                <input type="text" class="text-input" name="last-name" id="last-name"><br>
                 <label for="email-address">Email Address</label>
-                <input type="email" id="email-address" required>
-                <br>
-            <section class="radio-buttons">
+                <input type="email" class="text-input" name="email-address" id="email-address"><br>
+
+            <div class="radio-buttons">
+                <div>
                 <label for="road">Road</label>
-                <input type="radio" name="running-preferences" id="road" required checked><br>
+                <input type="radio" name="running_preferences" value="road" required checked><br>
+            </div>
+            <div>
                 <label for="trail">Trail</label>
-                <input type="radio" name="running-preferences" id="trail" required><br>
+                <input type="radio" name="running_preferences" value="trail" required><br>
+            </div>
+            <div>
                 <label for="both">Both</label>
-                <input type="radio" name="running-preferences" id="both" required><br>
+                <input type="radio" name="running_preferences" value="both" required><br>
+            </div>
                 <input type="submit" value="Let's Run" class="join-button">
-            </section>
+            </div>
             </form>
         </section>
     </main>
